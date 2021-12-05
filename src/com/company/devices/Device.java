@@ -32,4 +32,6 @@ public abstract class Device {
 
     public abstract boolean isTurnedOn();
 
+    public abstract void ok();
+
 }
