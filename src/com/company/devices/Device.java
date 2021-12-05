@@ -1,6 +1,6 @@
 package com.company.devices;
 
-public class Device {
+public abstract class Device {
     public String producer;
     public String model;
     public Integer yearOfProduction;
@@ -27,5 +27,9 @@ public class Device {
     public String getColour() {
         return colour;
     }
+
+    public abstract void turnOn();
+
+    public abstract boolean isTurnedOn();
 
 }

@@ -37,4 +37,14 @@ public class Phone extends Device {
                 ", imei=" + imei +
                 '}';
     }
+
+    @Override
+    public void turnOn() {
+
+    }
+
+    @Override
+    public boolean isTurnedOn() {
+        return false;
+    }
 }

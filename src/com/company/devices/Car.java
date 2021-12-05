@@ -14,4 +14,14 @@ public class Car extends Device {
         this.model = model;
         this.yearOfProduction = yearOfProduction;
     }
+
+    @Override
+    public void turnOn() {
+
+    }
+
+    @Override
+    public boolean isTurnedOn() {
+        return false;
+    }
 }
