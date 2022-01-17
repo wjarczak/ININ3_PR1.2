@@ -18,9 +18,3 @@ public class Main {
         System.out.println(me.getSalary());
     }
 }
-
-
-
-// CALY KOD OD NOWA NA GITA WRZUCIC BO COS SIE POSYALO
-//Test code changes
-//Working?
