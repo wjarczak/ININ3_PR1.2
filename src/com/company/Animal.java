@@ -1,7 +1,7 @@
 package com.company;
 
 public class Animal {
-    public final static Double DEFAULT_CAT_WEIGHT = 2.0;
+    final static Double DEFAULT_CAT_WEIGHT = 2.0;
     public final static Double DEFAULT_DOG_WEIGHT = 10.0;
     public static final double DEFAULT_WEIGHT = 1.0;
     final String species;

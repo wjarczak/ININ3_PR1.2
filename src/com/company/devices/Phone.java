@@ -5,11 +5,7 @@ public class Phone extends Device {
     public final Long imei;
 
     public Phone(String producer, String model, Integer yearOfProduction, String colour, Integer ramSize, Long imei ) {
-        super(producer, model, yearOfProduction);
-        this.producer = producer;
-        this.model = model;
-        this.yearOfProduction = yearOfProduction;
-        this.colour = colour;
+        super(producer, model, yearOfProduction, colour);
         this.ramSize = ramSize;
         this.imei = imei;
     }
@@ -26,7 +22,8 @@ public class Phone extends Device {
     public String getRamSize(){
         return this.ramSize +"GB";
     }
-    @Override
+
+
     public String toString() {
         return "Phone{" +
                 "producer='" + producer + '\'' +
@@ -40,11 +37,10 @@ public class Phone extends Device {
 
     @Override
     public void turnOn() {
-
+        System.out.println("Telefon włączony");
     }
 
     @Override
     public boolean isTurnedOn() {
         return false;
     }
-}

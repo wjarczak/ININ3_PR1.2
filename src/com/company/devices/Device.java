@@ -6,10 +6,11 @@ public abstract class Device {
     public Integer yearOfProduction;
     public String colour;
 
-    public Device(String producer, String model, Integer yearOfProduction) {
+    public Device(String producer, String model, Integer yearOfProduction, String colour) {
         this.producer = producer;
         this.model = model;
         this.yearOfProduction = yearOfProduction;
+        this.colour = colour;
     }
 
     public String getProducer() {
