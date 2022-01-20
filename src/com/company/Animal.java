@@ -8,8 +8,6 @@ public class Animal {
     Double weight;
     String name;
     Boolean isAlive;
-    Double feed;
-    Double goForAWalk;
 
     public Animal(String species) {
         this.isAlive = true;
@@ -20,6 +18,27 @@ public class Animal {
             this.weight = DEFAULT_CAT_WEIGHT;
         } else {
             this.weight = DEFAULT_WEIGHT;
+        }
+    }
+
+    void feed() {
+        if (this.isAlive) {
+            this.weight += 1;
+            System.out.println("thx for food bro");
+        } else {
+            System.out.println("too late, sorry");
+        }
+    }
+
+    void takeForAWalk() {
+        if (this.isAlive) {
+            this.weight -= 1;
+            System.out.println("nice walk xD");
+            if (this.weight <= 0) {
+                this.isAlive = false;
+            }
+        } else {
+            System.out.println("POLICE!!! THERE IS DEAD ANIMAL HERE");
         }
     }
 }
