@@ -1,6 +1,9 @@
 package com.company.devices;
 
-public abstract class Device {
+import com.company.Saleable;
+import com.company.animals.Human;
+
+public abstract class Device implements Saleable {
     public String producer;
     public String model;
     public Integer yearOfProduction;
@@ -13,21 +16,7 @@ public abstract class Device {
         this.colour = colour;
     }
 
-    public String getProducer() {
-        return producer;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public Integer getYearOfProduction() {
-        return yearOfProduction;
-    }
-
-    public String getColour() {
-        return colour;
-    }
+    public abstract void sale(Human seller, Human buyer, Double price);
 
     public abstract void turnOn();
 
