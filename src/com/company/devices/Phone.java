@@ -9,8 +9,8 @@ public class Phone extends Device {
     public final Integer imei;
     static final URL defaultAppServer = null;
 
-    public Phone(String producer, String model, Integer yearOfProduction,String colour, Integer ramSize, Integer imei) {
-        super(producer, model, yearOfProduction, colour);
+    public Phone(String producer, String model, Integer yearOfProduction,String colour, Integer ramSize, Integer imei, Double value) {
+        super(producer, model, yearOfProduction, colour, value);
         this.ramSize = ramSize;
         this.imei = imei;
     }
@@ -39,7 +39,7 @@ public class Phone extends Device {
     }
     public void installAnnApp(List<String> appNames) {
     }
-    public voud installAnnApp(URL appObject) {
+    public void installAnnApp(URL appObject) {
     }
 
 

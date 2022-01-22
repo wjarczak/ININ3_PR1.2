@@ -31,6 +31,9 @@ public abstract class Animal implements Saleable, Feedable {
         }
     }
 
+    public Animal(String homo_sapiens) {
+    }
+
 
     public void feed() {
         if (this.isAlive) {
