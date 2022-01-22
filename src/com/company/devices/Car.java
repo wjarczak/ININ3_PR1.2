@@ -2,7 +2,7 @@ package com.company.devices;
 
 import com.company.animals.Human;
 
-public class Car extends Device {
+public abstract class Car extends Device {
     Double engineVolume;
     String plates;
     public Double value;
@@ -25,6 +25,8 @@ public class Car extends Device {
                 ", value=" + value +
                 '}';
     }
+
+    public abstract void refuel();
 
     @Override
     public void sale(Human seller, Human buyer, Double price) {

@@ -1,10 +1,13 @@
 package com.company.devices;
 
 import com.company.animals.Human;
+import java.net.URL;
+import java.util.List;
 
 public class Phone extends Device {
     public final Integer ramSize;
     public final Integer imei;
+    static final URL defaultAppServer = null;
 
     public Phone(String producer, String model, Integer yearOfProduction,String colour, Integer ramSize, Integer imei) {
         super(producer, model, yearOfProduction, colour);
@@ -27,6 +30,18 @@ public class Phone extends Device {
                 ", imei=" + imei +
                 '}';
     }
+
+    public void installAnnApp(String appName) {
+    }
+    public void installAnnApp(String appname, Double version) {
+    }
+    public void installAnnApp(String appname, String serveraddr) {
+    }
+    public void installAnnApp(List<String> appNames) {
+    }
+    public voud installAnnApp(URL appObject) {
+    }
+
 
     @Override
     public void sale(Human seller, Human buyer, Double price) {
@@ -69,4 +84,5 @@ public class Phone extends Device {
     public void sale(String seller, String buyer, Double price) {
 
     }
+
 }
