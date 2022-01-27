@@ -3,6 +3,8 @@ package com.company;
 import com.company.animals.*;
 import com.company.devices.*;
 
+import java.util.ArrayList;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -48,5 +50,16 @@ public class Main {
 
         passerati.sale("human1", "human2", 15000.0);
         human1.sale("human1", "human2", 2.0);
+
+        Application app1 = new Application("mBank", 1.2D, 500.0D);
+        Application app2 = new Application("AliorBank", 0.5D, 50.0D);
+        Application app3 = new Application("PKO", 5.2D, 550.0D);
+        Application app4 = new Application("YouTube", 1.5D, 505.0D);
+
+        iphone.installAnApp("app1", human1);
+        iphone.installAnApp("app2", human2);
+        iphone.installAnApp("app3", human1);
+        ArrayList<Application> ByAlph = iphone.getAppsAlphabetucal();
+        ArrayList<Application> ByPrice = iphone.getAppsByPriceAsc();
     }
 }
