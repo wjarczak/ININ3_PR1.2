@@ -7,6 +7,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Phone extends Device {
     public final Integer ramSize;
@@ -97,9 +98,12 @@ public class Phone extends Device {
         System.out.println("List of free apps:");
         int counter = 0;
         for (Application app:apps) {
-            if)app.price == 0.0) {
+            if(app.price == 0.0) {
                 System.out.println("1. " + app);
                 counter += 1;
+            }
+            if(counter == 0.0) {
+                System.out.println("No free apps");
             }
         }
     }
@@ -121,6 +125,16 @@ public class Phone extends Device {
         return list;
     }
 
+    public boolean allInstalledApps(Application appName) {
+        return appName.appIsInstalled;
+    }
+    public boolean appIsInstalled(String appName) {
+        for(Application app:apps) {
+            if(Objects.equals((app.appName, appName) && app.appIsInstalled) {
+                return true;
+            }
+        }
+    }
 
     @Override
     public void sale(Human seller, Human buyer, Double price) {
